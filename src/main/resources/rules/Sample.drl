@@ -1,0 +1,680 @@
+package com.sample
+
+import javax.swing.JOptionPane; 
+
+declare Question
+question : String @key
+answers : String[] @key
+finalAnswer : String = null
+end
+
+declare Answer
+question : String
+answer : String
+end
+
+declare Result
+result : String
+end
+
+
+rule "Init"
+	then	
+		insert(new Question("Who are you looking for?",new String[]{"Musician","Someone else"}));
+		
+		insert(new Question("Wizard Rocker or Muggle Musician?",new String[]{"Wizard","Muggle"}));
+		insert(new Question("Wizard Rock is...",new String[]{"Awesome","Kind of weird"}));
+		insert(new Question("Do you only want live performances?",new String[]{"Yes","No"}));
+		insert(new Question("Are you too cheap to buy Ministry of Magic CDs?",new String[]{"As a Malfoy, I guess not","I'm a Weasley!"}));
+		insert(new Question("The Whomping Willow is awesome.",new String[]{"True","False"}));	
+		insert(new Question("Is it necessary that they actually exist?",new String[]{"Yes","No"}));
+		insert(new Question("Is Lost the best show ever?",new String[]{"Absolutely","Not at all"}));
+		insert(new Question("Do you like it when couples do music?",new String[]{"Yes!","Blech"}));
+		insert(new Question("Do you like Electronica?",new String[]{"Yes!","No"}));
+		insert(new Question("Are you easily offended?",new String[]{"Yes","No"}));
+		insert(new Question("Do you really like ukuleles?",new String[]{"Heck yes!","Not really"}));
+		insert(new Question("Do you prefer really nerdy or normal songs?",new String[]{"Normal","Nerdy"}));
+		insert(new Question("Do you want to mellow out or rock out?",new String[]{"Mellow","Rock"}));
+		insert(new Question("Relatively normal or strange lirics?",new String[]{"Strange","Normal"}));
+		insert(new Question("Which is better - Miley Cyrus or Randomness?",new String[]{"Random","Miley"}));
+		insert(new Question("Piano rock or guitar rock?",new String[]{"Piano","Guitar"}));
+		
+		
+		insert(new Question("Which do you want to watch?",new String[]{"Weekly show","Web series","Something else"}));
+		insert(new Question("Which fantasy is cooler?",new String[]{"World of Warcraft","Harry Potter"}));	
+		insert(new Question("Which do you find more interesting?",new String[]{"Celebrity gossip","Viral videos"}));
+		insert(new Question("Dominos are awesome",new String[]{"True","False"}));
+		insert(new Question("Do you like seeing things get destroyed?",new String[]{"Absolutely","Not really"}));
+		insert(new Question("In the blender or microwave?",new String[]{"Blender","Microwave"}));
+		insert(new Question("How about special effects?",new String[]{"Bring it on","No thanks"}));
+		insert(new Question("Would you rather they be...",new String[]{"Exlposive","Music based","Art based"}));
+		insert(new Question("Do you want to watch a skit?",new String[]{"Sure","No"}));
+		insert(new Question("Are you easily offended ?",new String[]{"Yes","No"}));
+		insert(new Question("Would you rather watch asian boys or white boys?",new String[]{"Asian","White"}));
+		insert(new Question("Want to play a game?",new String[]{"Yes","No"}));
+		insert(new Question("Do you like statistics?",new String[]{"Yes","No"}));
+		insert(new Question("How about public pranks?",new String[]{"Yes","No"}));
+		insert(new Question("Want to help charity?",new String[]{"Yes","No"}));		
+end
+
+
+//Musicians
+
+rule "Result: butterbeerwrocks"
+	when
+		Answer(question == "The Whomping Willow is awesome.", answer == "False")
+	then
+		insert(new Result("butterbeerwrocks"));
+end
+
+rule "Result: thewhompingwillows"
+	when
+		Answer(question == "The Whomping Willow is awesome.", answer == "True")
+	then
+		insert(new Result("thewhompingwillows"));
+end
+
+rule "Result: ministryofmagicmusic"
+	when
+		Answer(question == "Are you too cheap to buy Ministry of Magic CDs?", answer == "I'm a Weasley!")
+	then
+		insert(new Result("ministryofmagicmusic"));
+end
+
+rule "Result: karenswrockvideos"
+	when
+		Answer(question == "Do you only want live performances?", answer == "Yes")
+	then
+		insert(new Result("karenswrockvideos"));
+end
+
+rule "Result: feltbeats"
+	when
+		Answer(question == "Wizard Rock is...", answer == "Kind of weird")
+	then
+		insert(new Result("feltbeats"));
+end
+
+rule "Result: paigerailstone"
+	when
+		Answer(question == "Is it necessary that they actually exist?", answer == "No")
+	then
+		insert(new Result("paigerailstone"));
+end
+
+rule "Result: theoceanicsixmusic"
+	when
+		Answer(question == "Is Lost the best show ever?", answer == "Absolutely")
+	then
+		insert(new Result("theoceanicsixmusic"));
+end
+
+rule "Result: allcapsmusic"
+	when
+		Answer(question == "Do you like Electronica?", answer == "Yes!")
+	then
+		insert(new Result("allcapsmusic"));
+end
+
+rule "Result: pomplamoosemusic"
+	when
+		Answer(question == "Do you like Electronica?", answer == "No")
+	then
+		insert(new Result("pomplamoosemusic"));
+end
+
+rule "Result: boburnham"
+	when
+		Answer(question == "Are you easily offended?", answer == "No")
+	then
+		insert(new Result("boburnham"));
+end
+
+rule "Result: jaaaaaaa"
+	when
+		Answer(question == "Do you prefer really nerdy or normal songs?", answer == "Normal")
+	then
+		insert(new Result("jaaaaaaa"));
+end
+
+rule "Result: sweetafton23"
+	when
+		Answer(question == "Do you prefer really nerdy or normal songs?", answer == "Nerdy")
+	then
+		insert(new Result("sweetafton23"));
+end
+
+rule "Result: songsfrompaul"
+	when
+		Answer(question == "Do you want to mellow out or rock out?", answer == "Mellow")
+	then
+		insert(new Result("songsfrompaul"));
+end
+
+rule "Result: doctornoise"
+	when
+		Answer(question == "Piano rock or guitar rock?", answer == "Guitar")
+	then
+		insert(new Result("doctornoise"));
+end
+
+rule "Result: mikelombardomusic"
+	when
+		Answer(question == "Piano rock or guitar rock?", answer == "Piano")
+	then
+		insert(new Result("mikelombardomusic"));
+end
+
+rule "Result: rhettandlink"
+	when
+		Answer(question == "Which is better - Miley Cyrus or Randomness?", answer == "Random")
+	then
+		insert(new Result("rhettandlink"));
+end
+
+rule "Result: davedays"
+	when
+		Answer(question == "Which is better - Miley Cyrus or Randomness?", answer == "Miley")
+	then
+		insert(new Result("davedays"));
+end
+
+
+//Someone else
+
+rule "Result: watchtheguild"
+	when
+		Answer(question == "Which fantasy is cooler?", answer == "World of Warcraft")
+	then
+		insert(new Result("watchtheguild"));
+end
+
+rule "Result: scarheadshow"
+	when
+		Answer(question == "Which fantasy is cooler?", answer == "Harry Potter")
+	then
+		insert(new Result("scarheadshow"));
+end
+
+rule "Result: raywilliamjohnson"
+	when
+		Answer(question == "Which do you find more interesting?", answer == "Viral videos")
+	then
+		insert(new Result("raywilliamjohnson"));
+end
+
+rule "Result: whatthebuckshow"
+	when
+		Answer(question == "Which do you find more interesting?", answer == "Celebrity gossip")
+	then
+		insert(new Result("whatthebuckshow"));
+end
+
+rule "Result: flippycat"
+	when
+		Answer(question == "Dominos are awesome", answer == "True")
+	then
+		insert(new Result("flippycat"));
+end
+
+rule "Result: blendtec"
+	when
+		Answer(question == "In the blender or microwave?", answer == "Blender")
+	then
+		insert(new Result("blendtec"));
+end
+
+rule "Result: jpizzle1122"
+	when
+		Answer(question == "In the blender or microwave?", answer == "Microwave")
+	then
+		insert(new Result("jpizzle1122"));
+end
+
+rule "Result: freddiew"
+	when
+		Answer(question == "Would you rather they be...", answer == "Explosive")
+	then
+		insert(new Result("freddiew"));
+end
+
+rule "Result: kickthepj"
+	when
+		Answer(question == "Would you rather they be...", answer == "Art based")
+	then
+		insert(new Result("kickthepj"));
+end
+
+rule "Result: mysteryguitarman"
+	when
+		Answer(question == "Would you rather they be...", answer == "Music based")
+	then
+		insert(new Result("mysteryguitarman"));
+end
+
+rule "Result: shanedawsontv"
+	when
+		Answer(question == "Are you easily offended ?", answer == "No")
+	then
+		insert(new Result("shanedawsontv"));
+end
+
+rule "Result: smosh"
+	when
+		Answer(question == "Would you rather watch asian boys or white boys?", answer == "White")
+	then
+		insert(new Result("smosh"));
+end
+
+rule "Result: nigahiga"
+	when
+		Answer(question == "Would you rather watch asian boys or white boys?", answer == "Asian")
+	then
+		insert(new Result("nigahiga"));
+end
+
+rule "Result: thruthorfail"
+	when
+		Answer(question == "Want to play a game?", answer == "Yes")
+	then
+		insert(new Result("thruthorfail"));
+end
+
+rule "Result: the willofdc"
+	when
+		Answer(question == "Do you like statistics?", answer == "Yes")
+	then
+		insert(new Result("the willofdc"));
+end
+
+rule "Result: improveverywhere"
+	when
+		Answer(question == "How about public pranks?", answer == "Yes")
+	then
+		insert(new Result("improveverywhere"));
+end
+
+rule "Result: unculturedproject"
+	when
+		Answer(question == "Want to help charity?", answer == "Yes")
+	then
+		insert(new Result("unculturedproject"));
+end
+
+rule "Result: deception, your punishement is fred"
+	when
+		Answer(question == "Want to help charity?", answer == "No")
+	then
+		insert(new Result("deception, your punishement is fred"));
+end
+
+
+//Questions
+
+rule "Starting question"
+	when
+		$q : Question(question == "Who are you looking for?", finalAnswer == null)
+	then
+		String[] answers = $q.getAnswers();
+     	int x = JOptionPane.showOptionDialog(null,"<html><font size = 6><b>" + $q.getQuestion() + "</b></font></html>" , "Start: ", JOptionPane.DEFAULT_OPTION, JOptionPane.QUESTION_MESSAGE, null, answers, answers[0]); 
+      
+      	modify($q){setFinalAnswer(answers[x])};
+   		insert(new Answer($q.getQuestion(),answers[x]));         
+   		
+end
+
+//Musician
+
+rule "Wizard Rocker or Muggle Musician"
+	when
+		$q : Question(question == "Wizard Rocker or Muggle Musician?", finalAnswer == null)
+		Answer(question == "Who are you looking for?", answer == "Musician", $follows : ("Follows: " + question + " -> " + answer))
+	then
+		String[] answers = $q.getAnswers();
+	  	int x = JOptionPane.showOptionDialog(null,"<html><font size = 6><b>" + $q.getQuestion() + "</b></font></html>" , $follows , JOptionPane.DEFAULT_OPTION, JOptionPane.QUESTION_MESSAGE, null, answers, answers[0]); 
+      	modify($q){setFinalAnswer(answers[x])};
+   		insert(new Answer($q.getQuestion(), answers[x]));  
+end
+
+rule "Wizard Rock is..."
+	when
+		$q : Question(question == "Wizard Rock is...", finalAnswer == null)
+		Answer(question == "Wizard Rocker or Muggle Musician?", answer == "Wizard", $follows : ("Follows: " + question + " -> " + answer))
+	then
+		String[] answers = $q.getAnswers();
+	  	int x = JOptionPane.showOptionDialog(null,"<html><font size = 6><b>" + $q.getQuestion() + "</b></font></html>" , $follows , JOptionPane.DEFAULT_OPTION, JOptionPane.QUESTION_MESSAGE, null, answers, answers[0]); 
+      	modify($q){setFinalAnswer(answers[x])};
+   		insert(new Answer($q.getQuestion(), answers[x])); 
+end
+
+rule "Do you only want live performances?"
+	when
+		$q : Question(question == "Do you only want live performances?", finalAnswer == null)
+		Answer(question == "Wizard Rock is...", answer == "Awesome", $follows : ("Follows: " + question + " -> " + answer))
+	then
+		String[] answers = $q.getAnswers();
+	  	int x = JOptionPane.showOptionDialog(null,"<html><font size = 6><b>" + $q.getQuestion() + "</b></font></html>" , $follows , JOptionPane.DEFAULT_OPTION, JOptionPane.QUESTION_MESSAGE, null, answers, answers[0]); 
+      	modify($q){setFinalAnswer(answers[x])};
+   		insert(new Answer($q.getQuestion(), answers[x])); 
+end
+
+rule "Are you too cheap to buy Ministry of Magic CDs?"
+	when
+		$q : Question(question == "Are you too cheap to buy Ministry of Magic CDs?", finalAnswer == null)
+		Answer(question == "Do you only want live performances?", answer == "No", $follows : ("Follows: " + question + " -> " + answer))
+	then
+		String[] answers = $q.getAnswers();
+	  	int x = JOptionPane.showOptionDialog(null,"<html><font size = 6><b>" + $q.getQuestion() + "</b></font></html>" , $follows , JOptionPane.DEFAULT_OPTION, JOptionPane.QUESTION_MESSAGE, null, answers, answers[0]); 
+      	modify($q){setFinalAnswer(answers[x])};
+   		insert(new Answer($q.getQuestion(), answers[x])); 
+end
+
+rule "The Whomping Willow is awesome."
+	when
+		$q : Question(question == "The Whomping Willow is awesome.", finalAnswer == null)
+		Answer(question == "Are you too cheap to buy Ministry of Magic CDs?", answer == "As a Malfoy, I guess not", $follows : ("Follows: " + question + " -> " + answer))
+	then
+		String[] answers = $q.getAnswers();
+	  	int x = JOptionPane.showOptionDialog(null,"<html><font size = 6><b>" + $q.getQuestion() + "</b></font></html>" , $follows , JOptionPane.DEFAULT_OPTION, JOptionPane.QUESTION_MESSAGE, null, answers, answers[0]); 
+      	modify($q){setFinalAnswer(answers[x])};
+   		insert(new Answer($q.getQuestion(), answers[x])); 
+end
+
+rule "Is it necessary that they actually exist?"
+	when
+		$q : Question(question == "Is it necessary that they actually exist?", finalAnswer == null)
+		Answer(question == "Wizard Rocker or Muggle Musician?", answer == "Muggle", $follows : ("Follows: " + question + " -> " + answer))
+	then
+		String[] answers = $q.getAnswers();
+	  	int x = JOptionPane.showOptionDialog(null,"<html><font size = 6><b>" + $q.getQuestion() + "</b></font></html>" , $follows , JOptionPane.DEFAULT_OPTION, JOptionPane.QUESTION_MESSAGE, null, answers, answers[0]); 
+      	modify($q){setFinalAnswer(answers[x])};
+   		insert(new Answer($q.getQuestion(), answers[x])); 
+end
+
+rule "Is Lost the best show ever?"
+	when
+		$q : Question(question == "Is Lost the best show ever?", finalAnswer == null)
+		Answer(question == "Is it necessary that they actually exist?", answer == "Yes", $follows : ("Follows: " + question + " -> " + answer))
+	then
+		String[] answers = $q.getAnswers();
+	  	int x = JOptionPane.showOptionDialog(null,"<html><font size = 6><b>" + $q.getQuestion() + "</b></font></html>" , $follows , JOptionPane.DEFAULT_OPTION, JOptionPane.QUESTION_MESSAGE, null, answers, answers[0]); 
+      	modify($q){setFinalAnswer(answers[x])};
+   		insert(new Answer($q.getQuestion(), answers[x])); 
+end
+
+rule "Do you like it when couples do music?"
+	when
+		$q : Question(question == "Do you like it when couples do music?", finalAnswer == null)
+		Answer(question == "Is Lost the best show ever?", answer == "Not at all", $follows : ("Follows: " + question + " -> " + answer))
+	then
+		String[] answers = $q.getAnswers();
+	  	int x = JOptionPane.showOptionDialog(null,"<html><font size = 6><b>" + $q.getQuestion() + "</b></font></html>" , $follows , JOptionPane.DEFAULT_OPTION, JOptionPane.QUESTION_MESSAGE, null, answers, answers[0]); 
+      	modify($q){setFinalAnswer(answers[x])};
+   		insert(new Answer($q.getQuestion(), answers[x])); 
+end
+
+rule "Do you like Electronica?"
+	when
+		$q : Question(question == "Do you like Electronica?", finalAnswer == null)
+		Answer(question == "Do you like it when couples do music?", answer == "Yes!", $follows : ("Follows: " + question + " -> " + answer))
+	then
+		String[] answers = $q.getAnswers();
+	  	int x = JOptionPane.showOptionDialog(null,"<html><font size = 6><b>" + $q.getQuestion() + "</b></font></html>" , $follows , JOptionPane.DEFAULT_OPTION, JOptionPane.QUESTION_MESSAGE, null, answers, answers[0]); 
+      	modify($q){setFinalAnswer(answers[x])};
+   		insert(new Answer($q.getQuestion(), answers[x])); 
+end
+
+rule "Are you easily offended?"
+	when
+		$q : Question(question == "Are you easily offended?", finalAnswer == null)
+		Answer(question == "Do you like it when couples do music?", answer == "Blech", $follows : ("Follows: " + question + " -> " + answer))
+	then
+		String[] answers = $q.getAnswers();
+	  	int x = JOptionPane.showOptionDialog(null,"<html><font size = 6><b>" + $q.getQuestion() + "</b></font></html>" , $follows , JOptionPane.DEFAULT_OPTION, JOptionPane.QUESTION_MESSAGE, null, answers, answers[0]); 
+      	modify($q){setFinalAnswer(answers[x])};
+   		insert(new Answer($q.getQuestion(), answers[x])); 
+end
+
+rule "Do you really like ukuleles?"
+	when
+		$q : Question(question == "Do you really like ukuleles?", finalAnswer == null)
+		Answer(question == "Are you easily offended?", answer == "Yes", $follows : ("Follows: " + question + " -> " + answer))
+	then
+		String[] answers = $q.getAnswers();
+	  	int x = JOptionPane.showOptionDialog(null,"<html><font size = 6><b>" + $q.getQuestion() + "</b></font></html>" , $follows , JOptionPane.DEFAULT_OPTION, JOptionPane.QUESTION_MESSAGE, null, answers, answers[0]); 
+      	modify($q){setFinalAnswer(answers[x])};
+   		insert(new Answer($q.getQuestion(), answers[x])); 
+end
+
+rule "Do you prefer really nerdy or normal songs?"
+	when
+		$q : Question(question == "Do you prefer really nerdy or normal songs?", finalAnswer == null)
+		Answer(question == "Do you really like ukuleles?", answer == "Heck yes!", $follows : ("Follows: " + question + " -> " + answer))
+	then
+		String[] answers = $q.getAnswers();
+	  	int x = JOptionPane.showOptionDialog(null,"<html><font size = 6><b>" + $q.getQuestion() + "</b></font></html>" , $follows , JOptionPane.DEFAULT_OPTION, JOptionPane.QUESTION_MESSAGE, null, answers, answers[0]); 
+      	modify($q){setFinalAnswer(answers[x])};
+   		insert(new Answer($q.getQuestion(), answers[x])); 
+end
+
+
+rule "Do you want to mellow out or rock out?"
+	when
+		$q : Question(question == "Do you want to mellow out or rock out?", finalAnswer == null)
+		Answer(question == "Do you really like ukuleles?", answer == "Not really", $follows : ("Follows: " + question + " -> " + answer))
+	then
+		String[] answers = $q.getAnswers();
+	  	int x = JOptionPane.showOptionDialog(null,"<html><font size = 6><b>" + $q.getQuestion() + "</b></font></html>" , $follows , JOptionPane.DEFAULT_OPTION, JOptionPane.QUESTION_MESSAGE, null, answers, answers[0]); 
+      	modify($q){setFinalAnswer(answers[x])};
+   		insert(new Answer($q.getQuestion(), answers[x])); 
+end
+
+rule "Relatively normal or strange lirics?"
+	when
+		$q : Question(question == "Relatively normal or strange lirics?", finalAnswer == null)
+		Answer(question == "Do you want to mellow out or rock out?", answer == "Rock", $follows : ("Follows: " + question + " -> " + answer))
+	then
+		String[] answers = $q.getAnswers();
+	  	int x = JOptionPane.showOptionDialog(null,"<html><font size = 6><b>" + $q.getQuestion() + "</b></font></html>" , $follows , JOptionPane.DEFAULT_OPTION, JOptionPane.QUESTION_MESSAGE, null, answers, answers[0]); 
+      	modify($q){setFinalAnswer(answers[x])};
+   		insert(new Answer($q.getQuestion(), answers[x])); 
+end
+
+rule "Which is better - Miley Cyrus or Randomness?"
+	when
+		$q : Question(question == "Which is better - Miley Cyrus or Randomness?", finalAnswer == null)
+		Answer(question == "Relatively normal or strange lirics?", answer == "Strange", $follows : ("Follows: " + question + " -> " + answer))
+	then
+		String[] answers = $q.getAnswers();
+	  	int x = JOptionPane.showOptionDialog(null,"<html><font size = 6><b>" + $q.getQuestion() + "</b></font></html>" , $follows , JOptionPane.DEFAULT_OPTION, JOptionPane.QUESTION_MESSAGE, null, answers, answers[0]); 
+      	modify($q){setFinalAnswer(answers[x])};
+   		insert(new Answer($q.getQuestion(), answers[x])); 
+end
+
+rule "Piano rock or guitar rock?"
+	when
+		$q : Question(question == "Piano rock or guitar rock?", finalAnswer == null)
+		Answer(question == "Relatively normal or strange lirics?", answer == "Normal", $follows : ("Follows: " + question + " -> " + answer))
+	then
+		String[] answers = $q.getAnswers();
+	  	int x = JOptionPane.showOptionDialog(null,"<html><font size = 6><b>" + $q.getQuestion() + "</b></font></html>" , $follows , JOptionPane.DEFAULT_OPTION, JOptionPane.QUESTION_MESSAGE, null, answers, answers[0]); 
+      	modify($q){setFinalAnswer(answers[x])};
+   		insert(new Answer($q.getQuestion(), answers[x])); 
+end
+
+//Someone else
+
+rule "Which do you want to watch?"
+	when
+		$q : Question(question == "Which do you want to watch?", finalAnswer == null)
+		Answer(question == "Who are you looking for?", answer == "Someone else", $follows : ("Follows: " + question + " -> " + answer))
+	then
+		String[] answers = $q.getAnswers();
+	  	int x = JOptionPane.showOptionDialog(null,"<html><font size = 6><b>" + $q.getQuestion() + "</b></font></html>" , $follows , JOptionPane.DEFAULT_OPTION, JOptionPane.QUESTION_MESSAGE, null, answers, answers[0]); 
+      	modify($q){setFinalAnswer(answers[x])};
+   		insert(new Answer($q.getQuestion(), answers[x])); 
+end
+
+rule "Which fantasy is cooler?"
+	when
+		$q : Question(question == "Which fantasy is cooler?", finalAnswer == null)
+		Answer(question == "Which do you want to watch?", answer == "Web series", $follows : ("Follows: " + question + " -> " + answer))
+	then
+		String[] answers = $q.getAnswers();
+	  	int x = JOptionPane.showOptionDialog(null,"<html><font size = 6><b>" + $q.getQuestion() + "</b></font></html>" , $follows , JOptionPane.DEFAULT_OPTION, JOptionPane.QUESTION_MESSAGE, null, answers, answers[0]); 
+      	modify($q){setFinalAnswer(answers[x])};
+   		insert(new Answer($q.getQuestion(), answers[x])); 
+end
+
+rule "Which do you find more interesting?"
+	when
+		$q : Question(question == "Which do you find more interesting?", finalAnswer == null)
+		Answer(question == "Which do you want to watch?", answer == "Weekly show", $follows : ("Follows: " + question + " -> " + answer))
+	then
+		String[] answers = $q.getAnswers();
+	  	int x = JOptionPane.showOptionDialog(null,"<html><font size = 6><b>" + $q.getQuestion() + "</b></font></html>" , $follows , JOptionPane.DEFAULT_OPTION, JOptionPane.QUESTION_MESSAGE, null, answers, answers[0]); 
+      	modify($q){setFinalAnswer(answers[x])};
+   		insert(new Answer($q.getQuestion(), answers[x])); 
+end
+
+rule "Dominos are awesome"
+	when
+		$q : Question(question == "Dominos are awesome", finalAnswer == null)
+		Answer(question == "Which do you want to watch?", answer == "Something else", $follows : ("Follows: " + question + " -> " + answer))
+	then
+		String[] answers = $q.getAnswers();
+	  	int x = JOptionPane.showOptionDialog(null,"<html><font size = 6><b>" + $q.getQuestion() + "</b></font></html>" , $follows , JOptionPane.DEFAULT_OPTION, JOptionPane.QUESTION_MESSAGE, null, answers, answers[0]); 
+      	modify($q){setFinalAnswer(answers[x])};
+   		insert(new Answer($q.getQuestion(), answers[x])); 
+end
+
+rule "Do you like seeing things get destroyed?"
+	when
+		$q : Question(question == "Do you like seeing things get destroyed?", finalAnswer == null)
+		Answer(question == "Dominos are awesome", answer == "False", $follows : ("Follows: " + question + " -> " + answer))
+	then
+		String[] answers = $q.getAnswers();
+	  	int x = JOptionPane.showOptionDialog(null,"<html><font size = 6><b>" + $q.getQuestion() + "</b></font></html>" , $follows , JOptionPane.DEFAULT_OPTION, JOptionPane.QUESTION_MESSAGE, null, answers, answers[0]); 
+      	modify($q){setFinalAnswer(answers[x])};
+   		insert(new Answer($q.getQuestion(), answers[x])); 
+end
+
+rule "In the blender or microwave?"
+	when
+		$q : Question(question == "In the blender or microwave?", finalAnswer == null)
+		Answer(question == "Do you like seeing things get destroyed?", answer == "Absolutely", $follows : ("Follows: " + question + " -> " + answer))
+	then
+		String[] answers = $q.getAnswers();
+	  	int x = JOptionPane.showOptionDialog(null,"<html><font size = 6><b>" + $q.getQuestion() + "</b></font></html>" , $follows , JOptionPane.DEFAULT_OPTION, JOptionPane.QUESTION_MESSAGE, null, answers, answers[0]); 
+      	modify($q){setFinalAnswer(answers[x])};
+   		insert(new Answer($q.getQuestion(), answers[x])); 
+end
+
+rule "How about special effects?"
+	when
+		$q : Question(question == "How about special effects?", finalAnswer == null)
+		Answer(question == "Do you like seeing things get destroyed?", answer == "Not really", $follows : ("Follows: " + question + " -> " + answer))
+	then
+		String[] answers = $q.getAnswers();
+	  	int x = JOptionPane.showOptionDialog(null,"<html><font size = 6><b>" + $q.getQuestion() + "</b></font></html>" , $follows , JOptionPane.DEFAULT_OPTION, JOptionPane.QUESTION_MESSAGE, null, answers, answers[0]); 
+      	modify($q){setFinalAnswer(answers[x])};
+   		insert(new Answer($q.getQuestion(), answers[x])); 
+end
+
+rule "Would you rather they be..."
+	when
+		$q : Question(question == "Would you rather they be...", finalAnswer == null)
+		Answer(question == "How about special effects?", answer == "Bring it on", $follows : ("Follows: " + question + " -> " + answer))
+	then
+		String[] answers = $q.getAnswers();
+	  	int x = JOptionPane.showOptionDialog(null,"<html><font size = 6><b>" + $q.getQuestion() + "</b></font></html>" , $follows , JOptionPane.DEFAULT_OPTION, JOptionPane.QUESTION_MESSAGE, null, answers, answers[0]); 
+      	modify($q){setFinalAnswer(answers[x])};
+   		insert(new Answer($q.getQuestion(), answers[x]));
+end
+
+rule "Do you want to watch a skit?"
+	when
+		$q : Question(question == "Do you want to watch a skit?", finalAnswer == null)
+		Answer(question == "How about special effects?", answer == "No thanks", $follows : ("Follows: " + question + " -> " + answer))
+	then
+		String[] answers = $q.getAnswers();
+	  	int x = JOptionPane.showOptionDialog(null,"<html><font size = 6><b>" + $q.getQuestion() + "</b></font></html>" , $follows , JOptionPane.DEFAULT_OPTION, JOptionPane.QUESTION_MESSAGE, null, answers, answers[0]); 
+      	modify($q){setFinalAnswer(answers[x])};
+   		insert(new Answer($q.getQuestion(), answers[x]));
+end
+
+rule "Are you easily offended ?"
+	when
+		$q : Question(question == "Are you easily offended ?", finalAnswer == null)
+		Answer(question == "Do you want to watch a skit?", answer == "Sure", $follows : ("Follows: " + question + " -> " + answer))
+	then
+		String[] answers = $q.getAnswers();
+	  	int x = JOptionPane.showOptionDialog(null,"<html><font size = 6><b>" + $q.getQuestion() + "</b></font></html>" , $follows , JOptionPane.DEFAULT_OPTION, JOptionPane.QUESTION_MESSAGE, null, answers, answers[0]); 
+      	modify($q){setFinalAnswer(answers[x])};
+   		insert(new Answer($q.getQuestion(), answers[x]));
+end
+
+rule "Would you rather watch asian boys or white boys?"
+	when
+		$q : Question(question == "Would you rather watch asian boys or white boys?", finalAnswer == null)
+		Answer(question == "Are you easily offended ?", answer == "Yes", $follows : ("Follows: " + question + " -> " + answer))
+	then
+		String[] answers = $q.getAnswers();
+	  	int x = JOptionPane.showOptionDialog(null,"<html><font size = 6><b>" + $q.getQuestion() + "</b></font></html>" , $follows , JOptionPane.DEFAULT_OPTION, JOptionPane.QUESTION_MESSAGE, null, answers, answers[0]); 
+      	modify($q){setFinalAnswer(answers[x])};
+   		insert(new Answer($q.getQuestion(), answers[x]));
+end
+
+rule "Want to play a game?"
+	when
+		$q : Question(question == "Want to play a game?", finalAnswer == null)
+		Answer(question == "Do you want to watch a skit?", answer == "No", $follows : ("Follows: " + question + " -> " + answer))
+	then
+		String[] answers = $q.getAnswers();
+	  	int x = JOptionPane.showOptionDialog(null,"<html><font size = 6><b>" + $q.getQuestion() + "</b></font></html>" , $follows , JOptionPane.DEFAULT_OPTION, JOptionPane.QUESTION_MESSAGE, null, answers, answers[0]); 
+      	modify($q){setFinalAnswer(answers[x])};
+   		insert(new Answer($q.getQuestion(), answers[x]));
+end
+
+rule "Do you like statistics?"
+	when
+		$q : Question(question == "Do you like statistics?", finalAnswer == null)
+		Answer(question == "Want to play a game?", answer == "No", $follows : ("Follows: " + question + " -> " + answer))
+	then
+		String[] answers = $q.getAnswers();
+	  	int x = JOptionPane.showOptionDialog(null,"<html><font size = 6><b>" + $q.getQuestion() + "</b></font></html>" , $follows , JOptionPane.DEFAULT_OPTION, JOptionPane.QUESTION_MESSAGE, null, answers, answers[0]); 
+      	modify($q){setFinalAnswer(answers[x])};
+   		insert(new Answer($q.getQuestion(), answers[x]));
+end
+
+rule "How about public pranks?"
+	when
+		$q : Question(question == "How about public pranks?", finalAnswer == null)
+		Answer(question == "Do you like statistics?", answer == "No", $follows : ("Follows: " + question + " -> " + answer))
+	then
+		String[] answers = $q.getAnswers();
+	  	int x = JOptionPane.showOptionDialog(null,"<html><font size = 6><b>" + $q.getQuestion() + "</b></font></html>" , $follows , JOptionPane.DEFAULT_OPTION, JOptionPane.QUESTION_MESSAGE, null, answers, answers[0]); 
+      	modify($q){setFinalAnswer(answers[x])};
+   		insert(new Answer($q.getQuestion(), answers[x]));
+end
+
+rule "Want to help charity?"
+	when
+		$q : Question(question == "Want to help charity?", finalAnswer == null)
+		Answer(question == "How about public pranks?", answer == "No", $follows : ("Follows: " + question + " -> " + answer))
+	then
+		String[] answers = $q.getAnswers();
+	  	int x = JOptionPane.showOptionDialog(null,"<html><font size = 6><b>" + $q.getQuestion() + "</b></font></html>" , $follows , JOptionPane.DEFAULT_OPTION, JOptionPane.QUESTION_MESSAGE, null, answers, answers[0]); 
+      	modify($q){setFinalAnswer(answers[x])};
+   		insert(new Answer($q.getQuestion(), answers[x]));
+end
+
+//Querry Ending 
+
+query "answers"
+	Answer( $answer : (question + " -> " + answer + "\n"));
+end
+
+query "result"
+	Result($result : result)
+end

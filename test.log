@@ -1,0 +1,400 @@
+<object-stream>
+<org.drools.core.audit.WorkingMemoryLog>
+  <version>6.1</version>
+  <events>
+    <org.drools.core.audit.event.ActivationLogEvent>
+      <type>4</type>
+      <activationId>Init [0]</activationId>
+      <rule>Init</rule>
+      <declarations></declarations>
+      <factHandleIds>0</factHandleIds>
+    </org.drools.core.audit.event.ActivationLogEvent>
+    <org.drools.core.audit.event.ActivationLogEvent>
+      <type>6</type>
+      <activationId>Init [0]</activationId>
+      <rule>Init</rule>
+      <declarations></declarations>
+      <factHandleIds>0</factHandleIds>
+    </org.drools.core.audit.event.ActivationLogEvent>
+    <org.drools.core.audit.event.ObjectLogEvent>
+      <type>1</type>
+      <factId>1</factId>
+      <objectToString>Question( question=Who are you looking for?, answers=[Musician, Someone else], finalAnswer=null )</objectToString>
+    </org.drools.core.audit.event.ObjectLogEvent>
+    <org.drools.core.audit.event.ObjectLogEvent>
+      <type>1</type>
+      <factId>2</factId>
+      <objectToString>Question( question=Wizard Rocker or Muggle Musician?, answers=[Wizard, Muggle], finalAnswer=null )</objectToString>
+    </org.drools.core.audit.event.ObjectLogEvent>
+    <org.drools.core.audit.event.ObjectLogEvent>
+      <type>1</type>
+      <factId>3</factId>
+      <objectToString>Question( question=Wizard Rock is..., answers=[Awesome, Kind of weird], finalAnswer=null )</objectToString>
+    </org.drools.core.audit.event.ObjectLogEvent>
+    <org.drools.core.audit.event.ObjectLogEvent>
+      <type>1</type>
+      <factId>4</factId>
+      <objectToString>Question( question=Do you only want live performances?, answers=[Yes, No], finalAnswer=null )</objectToString>
+    </org.drools.core.audit.event.ObjectLogEvent>
+    <org.drools.core.audit.event.ObjectLogEvent>
+      <type>1</type>
+      <factId>5</factId>
+      <objectToString>Question( question=Are you too cheap to buy Ministry of Magic CDs?, answers=[As a Malfoy, I guess not, I&apos;m a Weasley!], finalAnswer=null )</objectToString>
+    </org.drools.core.audit.event.ObjectLogEvent>
+    <org.drools.core.audit.event.ObjectLogEvent>
+      <type>1</type>
+      <factId>6</factId>
+      <objectToString>Question( question=The Whomping Willow is awesome., answers=[True, False], finalAnswer=null )</objectToString>
+    </org.drools.core.audit.event.ObjectLogEvent>
+    <org.drools.core.audit.event.ObjectLogEvent>
+      <type>1</type>
+      <factId>7</factId>
+      <objectToString>Question( question=Is it necessary that they actually exist?, answers=[Yes, No], finalAnswer=null )</objectToString>
+    </org.drools.core.audit.event.ObjectLogEvent>
+    <org.drools.core.audit.event.ObjectLogEvent>
+      <type>1</type>
+      <factId>8</factId>
+      <objectToString>Question( question=Is Lost the best show ever?, answers=[Absolutely, Not at all], finalAnswer=null )</objectToString>
+    </org.drools.core.audit.event.ObjectLogEvent>
+    <org.drools.core.audit.event.ObjectLogEvent>
+      <type>1</type>
+      <factId>9</factId>
+      <objectToString>Question( question=Do you like it when couples do music?, answers=[Yes!, Blech], finalAnswer=null )</objectToString>
+    </org.drools.core.audit.event.ObjectLogEvent>
+    <org.drools.core.audit.event.ObjectLogEvent>
+      <type>1</type>
+      <factId>10</factId>
+      <objectToString>Question( question=Do you like Electronica?, answers=[Yes!, No], finalAnswer=null )</objectToString>
+    </org.drools.core.audit.event.ObjectLogEvent>
+    <org.drools.core.audit.event.ObjectLogEvent>
+      <type>1</type>
+      <factId>11</factId>
+      <objectToString>Question( question=Are you easily offended?, answers=[Yes, No], finalAnswer=null )</objectToString>
+    </org.drools.core.audit.event.ObjectLogEvent>
+    <org.drools.core.audit.event.ObjectLogEvent>
+      <type>1</type>
+      <factId>12</factId>
+      <objectToString>Question( question=Do you really like ukuleles?, answers=[Heck yes!, Not really], finalAnswer=null )</objectToString>
+    </org.drools.core.audit.event.ObjectLogEvent>
+    <org.drools.core.audit.event.ObjectLogEvent>
+      <type>1</type>
+      <factId>13</factId>
+      <objectToString>Question( question=Do you prefer really nerdy or normal songs?, answers=[Normal, Nerdy], finalAnswer=null )</objectToString>
+    </org.drools.core.audit.event.ObjectLogEvent>
+    <org.drools.core.audit.event.ObjectLogEvent>
+      <type>1</type>
+      <factId>14</factId>
+      <objectToString>Question( question=Do you want to mellow out or rock out?, answers=[Mellow, Rock], finalAnswer=null )</objectToString>
+    </org.drools.core.audit.event.ObjectLogEvent>
+    <org.drools.core.audit.event.ObjectLogEvent>
+      <type>1</type>
+      <factId>15</factId>
+      <objectToString>Question( question=Relatively normal or strange lirics?, answers=[Strange, Normal], finalAnswer=null )</objectToString>
+    </org.drools.core.audit.event.ObjectLogEvent>
+    <org.drools.core.audit.event.ObjectLogEvent>
+      <type>1</type>
+      <factId>16</factId>
+      <objectToString>Question( question=Which is better - Miley Cyrus or Randomness?, answers=[Random, Miley], finalAnswer=null )</objectToString>
+    </org.drools.core.audit.event.ObjectLogEvent>
+    <org.drools.core.audit.event.ObjectLogEvent>
+      <type>1</type>
+      <factId>17</factId>
+      <objectToString>Question( question=Piano rock or guitar rock?, answers=[Piano, Guitar], finalAnswer=null )</objectToString>
+    </org.drools.core.audit.event.ObjectLogEvent>
+    <org.drools.core.audit.event.ObjectLogEvent>
+      <type>1</type>
+      <factId>18</factId>
+      <objectToString>Question( question=Which do you want to watch?, answers=[Weekly show, Web series, Something else], finalAnswer=null )</objectToString>
+    </org.drools.core.audit.event.ObjectLogEvent>
+    <org.drools.core.audit.event.ObjectLogEvent>
+      <type>1</type>
+      <factId>19</factId>
+      <objectToString>Question( question=Which fantasy is cooler?, answers=[World of Warcraft, Harry Potter], finalAnswer=null )</objectToString>
+    </org.drools.core.audit.event.ObjectLogEvent>
+    <org.drools.core.audit.event.ObjectLogEvent>
+      <type>1</type>
+      <factId>20</factId>
+      <objectToString>Question( question=Which do you find more interesting?, answers=[Celebrity gossip, Viral videos], finalAnswer=null )</objectToString>
+    </org.drools.core.audit.event.ObjectLogEvent>
+    <org.drools.core.audit.event.ObjectLogEvent>
+      <type>1</type>
+      <factId>21</factId>
+      <objectToString>Question( question=Dominos are awesome, answers=[True, False], finalAnswer=null )</objectToString>
+    </org.drools.core.audit.event.ObjectLogEvent>
+    <org.drools.core.audit.event.ObjectLogEvent>
+      <type>1</type>
+      <factId>22</factId>
+      <objectToString>Question( question=Do you like seeing things get destroyed?, answers=[Absolutely, Not really], finalAnswer=null )</objectToString>
+    </org.drools.core.audit.event.ObjectLogEvent>
+    <org.drools.core.audit.event.ObjectLogEvent>
+      <type>1</type>
+      <factId>23</factId>
+      <objectToString>Question( question=In the blender or microwave?, answers=[Blender, Microwave], finalAnswer=null )</objectToString>
+    </org.drools.core.audit.event.ObjectLogEvent>
+    <org.drools.core.audit.event.ObjectLogEvent>
+      <type>1</type>
+      <factId>24</factId>
+      <objectToString>Question( question=How about special effects?, answers=[Bring it on, No thanks], finalAnswer=null )</objectToString>
+    </org.drools.core.audit.event.ObjectLogEvent>
+    <org.drools.core.audit.event.ObjectLogEvent>
+      <type>1</type>
+      <factId>25</factId>
+      <objectToString>Question( question=Would you rather they be..., answers=[Exlposive, Music based, Art based], finalAnswer=null )</objectToString>
+    </org.drools.core.audit.event.ObjectLogEvent>
+    <org.drools.core.audit.event.ObjectLogEvent>
+      <type>1</type>
+      <factId>26</factId>
+      <objectToString>Question( question=Do you want to watch a skit?, answers=[Sure, No], finalAnswer=null )</objectToString>
+    </org.drools.core.audit.event.ObjectLogEvent>
+    <org.drools.core.audit.event.ObjectLogEvent>
+      <type>1</type>
+      <factId>27</factId>
+      <objectToString>Question( question=Are you easily offended ?, answers=[Yes, No], finalAnswer=null )</objectToString>
+    </org.drools.core.audit.event.ObjectLogEvent>
+    <org.drools.core.audit.event.ObjectLogEvent>
+      <type>1</type>
+      <factId>28</factId>
+      <objectToString>Question( question=Would you rather watch asian boys or white boys?, answers=[Asian, White], finalAnswer=null )</objectToString>
+    </org.drools.core.audit.event.ObjectLogEvent>
+    <org.drools.core.audit.event.ObjectLogEvent>
+      <type>1</type>
+      <factId>29</factId>
+      <objectToString>Question( question=Want to play a game?, answers=[Yes, No], finalAnswer=null )</objectToString>
+    </org.drools.core.audit.event.ObjectLogEvent>
+    <org.drools.core.audit.event.ObjectLogEvent>
+      <type>1</type>
+      <factId>30</factId>
+      <objectToString>Question( question=Do you like statistics?, answers=[Yes, No], finalAnswer=null )</objectToString>
+    </org.drools.core.audit.event.ObjectLogEvent>
+    <org.drools.core.audit.event.ObjectLogEvent>
+      <type>1</type>
+      <factId>31</factId>
+      <objectToString>Question( question=How about public pranks?, answers=[Yes, No], finalAnswer=null )</objectToString>
+    </org.drools.core.audit.event.ObjectLogEvent>
+    <org.drools.core.audit.event.ObjectLogEvent>
+      <type>1</type>
+      <factId>32</factId>
+      <objectToString>Question( question=Want to help charity?, answers=[Yes, No], finalAnswer=null )</objectToString>
+    </org.drools.core.audit.event.ObjectLogEvent>
+    <org.drools.core.audit.event.ActivationLogEvent>
+      <type>7</type>
+      <activationId>Init [0]</activationId>
+      <rule>Init</rule>
+      <declarations></declarations>
+      <factHandleIds>0</factHandleIds>
+    </org.drools.core.audit.event.ActivationLogEvent>
+    <org.drools.core.audit.event.ActivationLogEvent>
+      <type>4</type>
+      <activationId>Starting question [1]</activationId>
+      <rule>Starting question</rule>
+      <declarations>$q=Question( question=Who are you looking for?, answers=[Musician, Someone else], finalAnswer=null )</declarations>
+      <factHandleIds>1</factHandleIds>
+    </org.drools.core.audit.event.ActivationLogEvent>
+    <org.drools.core.audit.event.ActivationLogEvent>
+      <type>6</type>
+      <activationId>Starting question [1]</activationId>
+      <rule>Starting question</rule>
+      <declarations>$q=Question( question=Who are you looking for?, answers=[Musician, Someone else], finalAnswer=null )</declarations>
+      <factHandleIds>1</factHandleIds>
+    </org.drools.core.audit.event.ActivationLogEvent>
+    <org.drools.core.audit.event.ObjectLogEvent>
+      <type>2</type>
+      <factId>1</factId>
+      <objectToString>Question( question=Who are you looking for?, answers=[Musician, Someone else], finalAnswer=Someone else )</objectToString>
+    </org.drools.core.audit.event.ObjectLogEvent>
+    <org.drools.core.audit.event.ObjectLogEvent>
+      <type>1</type>
+      <factId>33</factId>
+      <objectToString>Answer( question=Who are you looking for?, answer=Someone else )</objectToString>
+    </org.drools.core.audit.event.ObjectLogEvent>
+    <org.drools.core.audit.event.ActivationLogEvent>
+      <type>7</type>
+      <activationId>Starting question [1]</activationId>
+      <rule>Starting question</rule>
+      <declarations>$q=Question( question=Who are you looking for?, answers=[Musician, Someone else], finalAnswer=Someone else )</declarations>
+      <factHandleIds>1</factHandleIds>
+    </org.drools.core.audit.event.ActivationLogEvent>
+    <org.drools.core.audit.event.ActivationLogEvent>
+      <type>4</type>
+      <activationId>Which do you want to watch? [18, 33]</activationId>
+      <rule>Which do you want to watch?</rule>
+      <declarations>$q=Question( question=Which do you want to watch?, answers=[Weekly show, Web series, Something else], finalAnswer=null ); $follows=Follows: Who are you looking for? -&gt; Someone else</declarations>
+      <factHandleIds>33,18</factHandleIds>
+    </org.drools.core.audit.event.ActivationLogEvent>
+    <org.drools.core.audit.event.ActivationLogEvent>
+      <type>6</type>
+      <activationId>Which do you want to watch? [18, 33]</activationId>
+      <rule>Which do you want to watch?</rule>
+      <declarations>$q=Question( question=Which do you want to watch?, answers=[Weekly show, Web series, Something else], finalAnswer=null ); $follows=Follows: Who are you looking for? -&gt; Someone else</declarations>
+      <factHandleIds>33,18</factHandleIds>
+    </org.drools.core.audit.event.ActivationLogEvent>
+    <org.drools.core.audit.event.ObjectLogEvent>
+      <type>2</type>
+      <factId>18</factId>
+      <objectToString>Question( question=Which do you want to watch?, answers=[Weekly show, Web series, Something else], finalAnswer=Something else )</objectToString>
+    </org.drools.core.audit.event.ObjectLogEvent>
+    <org.drools.core.audit.event.ObjectLogEvent>
+      <type>1</type>
+      <factId>34</factId>
+      <objectToString>Answer( question=Which do you want to watch?, answer=Something else )</objectToString>
+    </org.drools.core.audit.event.ObjectLogEvent>
+    <org.drools.core.audit.event.ActivationLogEvent>
+      <type>7</type>
+      <activationId>Which do you want to watch? [18, 33]</activationId>
+      <rule>Which do you want to watch?</rule>
+      <declarations>$q=Question( question=Which do you want to watch?, answers=[Weekly show, Web series, Something else], finalAnswer=Something else ); $follows=Follows: Who are you looking for? -&gt; Someone else</declarations>
+      <factHandleIds>33,18</factHandleIds>
+    </org.drools.core.audit.event.ActivationLogEvent>
+    <org.drools.core.audit.event.ActivationLogEvent>
+      <type>4</type>
+      <activationId>Dominos are awesome [21, 34]</activationId>
+      <rule>Dominos are awesome</rule>
+      <declarations>$q=Question( question=Dominos are awesome, answers=[True, False], finalAnswer=null ); $follows=Follows: Which do you want to watch? -&gt; Something else</declarations>
+      <factHandleIds>34,21</factHandleIds>
+    </org.drools.core.audit.event.ActivationLogEvent>
+    <org.drools.core.audit.event.ActivationLogEvent>
+      <type>6</type>
+      <activationId>Dominos are awesome [21, 34]</activationId>
+      <rule>Dominos are awesome</rule>
+      <declarations>$q=Question( question=Dominos are awesome, answers=[True, False], finalAnswer=null ); $follows=Follows: Which do you want to watch? -&gt; Something else</declarations>
+      <factHandleIds>34,21</factHandleIds>
+    </org.drools.core.audit.event.ActivationLogEvent>
+    <org.drools.core.audit.event.ObjectLogEvent>
+      <type>2</type>
+      <factId>21</factId>
+      <objectToString>Question( question=Dominos are awesome, answers=[True, False], finalAnswer=False )</objectToString>
+    </org.drools.core.audit.event.ObjectLogEvent>
+    <org.drools.core.audit.event.ObjectLogEvent>
+      <type>1</type>
+      <factId>35</factId>
+      <objectToString>Answer( question=Dominos are awesome, answer=False )</objectToString>
+    </org.drools.core.audit.event.ObjectLogEvent>
+    <org.drools.core.audit.event.ActivationLogEvent>
+      <type>7</type>
+      <activationId>Dominos are awesome [21, 34]</activationId>
+      <rule>Dominos are awesome</rule>
+      <declarations>$q=Question( question=Dominos are awesome, answers=[True, False], finalAnswer=False ); $follows=Follows: Which do you want to watch? -&gt; Something else</declarations>
+      <factHandleIds>34,21</factHandleIds>
+    </org.drools.core.audit.event.ActivationLogEvent>
+    <org.drools.core.audit.event.ActivationLogEvent>
+      <type>4</type>
+      <activationId>Do you like seeing things get destroyed? [22, 35]</activationId>
+      <rule>Do you like seeing things get destroyed?</rule>
+      <declarations>$q=Question( question=Do you like seeing things get destroyed?, answers=[Absolutely, Not really], finalAnswer=null ); $follows=Follows: Dominos are awesome -&gt; False</declarations>
+      <factHandleIds>35,22</factHandleIds>
+    </org.drools.core.audit.event.ActivationLogEvent>
+    <org.drools.core.audit.event.ActivationLogEvent>
+      <type>6</type>
+      <activationId>Do you like seeing things get destroyed? [22, 35]</activationId>
+      <rule>Do you like seeing things get destroyed?</rule>
+      <declarations>$q=Question( question=Do you like seeing things get destroyed?, answers=[Absolutely, Not really], finalAnswer=null ); $follows=Follows: Dominos are awesome -&gt; False</declarations>
+      <factHandleIds>35,22</factHandleIds>
+    </org.drools.core.audit.event.ActivationLogEvent>
+    <org.drools.core.audit.event.ObjectLogEvent>
+      <type>2</type>
+      <factId>22</factId>
+      <objectToString>Question( question=Do you like seeing things get destroyed?, answers=[Absolutely, Not really], finalAnswer=Not really )</objectToString>
+    </org.drools.core.audit.event.ObjectLogEvent>
+    <org.drools.core.audit.event.ObjectLogEvent>
+      <type>1</type>
+      <factId>36</factId>
+      <objectToString>Answer( question=Do you like seeing things get destroyed?, answer=Not really )</objectToString>
+    </org.drools.core.audit.event.ObjectLogEvent>
+    <org.drools.core.audit.event.ActivationLogEvent>
+      <type>7</type>
+      <activationId>Do you like seeing things get destroyed? [22, 35]</activationId>
+      <rule>Do you like seeing things get destroyed?</rule>
+      <declarations>$q=Question( question=Do you like seeing things get destroyed?, answers=[Absolutely, Not really], finalAnswer=Not really ); $follows=Follows: Dominos are awesome -&gt; False</declarations>
+      <factHandleIds>35,22</factHandleIds>
+    </org.drools.core.audit.event.ActivationLogEvent>
+    <org.drools.core.audit.event.ActivationLogEvent>
+      <type>4</type>
+      <activationId>How about special effects? [24, 36]</activationId>
+      <rule>How about special effects?</rule>
+      <declarations>$q=Question( question=How about special effects?, answers=[Bring it on, No thanks], finalAnswer=null ); $follows=Follows: Do you like seeing things get destroyed? -&gt; Not really</declarations>
+      <factHandleIds>36,24</factHandleIds>
+    </org.drools.core.audit.event.ActivationLogEvent>
+    <org.drools.core.audit.event.ActivationLogEvent>
+      <type>6</type>
+      <activationId>How about special effects? [24, 36]</activationId>
+      <rule>How about special effects?</rule>
+      <declarations>$q=Question( question=How about special effects?, answers=[Bring it on, No thanks], finalAnswer=null ); $follows=Follows: Do you like seeing things get destroyed? -&gt; Not really</declarations>
+      <factHandleIds>36,24</factHandleIds>
+    </org.drools.core.audit.event.ActivationLogEvent>
+    <org.drools.core.audit.event.ObjectLogEvent>
+      <type>2</type>
+      <factId>24</factId>
+      <objectToString>Question( question=How about special effects?, answers=[Bring it on, No thanks], finalAnswer=Bring it on )</objectToString>
+    </org.drools.core.audit.event.ObjectLogEvent>
+    <org.drools.core.audit.event.ObjectLogEvent>
+      <type>1</type>
+      <factId>37</factId>
+      <objectToString>Answer( question=How about special effects?, answer=Bring it on )</objectToString>
+    </org.drools.core.audit.event.ObjectLogEvent>
+    <org.drools.core.audit.event.ActivationLogEvent>
+      <type>7</type>
+      <activationId>How about special effects? [24, 36]</activationId>
+      <rule>How about special effects?</rule>
+      <declarations>$q=Question( question=How about special effects?, answers=[Bring it on, No thanks], finalAnswer=Bring it on ); $follows=Follows: Do you like seeing things get destroyed? -&gt; Not really</declarations>
+      <factHandleIds>36,24</factHandleIds>
+    </org.drools.core.audit.event.ActivationLogEvent>
+    <org.drools.core.audit.event.ActivationLogEvent>
+      <type>4</type>
+      <activationId>Would you rather they be... [25, 37]</activationId>
+      <rule>Would you rather they be...</rule>
+      <declarations>$q=Question( question=Would you rather they be..., answers=[Exlposive, Music based, Art based], finalAnswer=null ); $follows=Follows: How about special effects? -&gt; Bring it on</declarations>
+      <factHandleIds>37,25</factHandleIds>
+    </org.drools.core.audit.event.ActivationLogEvent>
+    <org.drools.core.audit.event.ActivationLogEvent>
+      <type>6</type>
+      <activationId>Would you rather they be... [25, 37]</activationId>
+      <rule>Would you rather they be...</rule>
+      <declarations>$q=Question( question=Would you rather they be..., answers=[Exlposive, Music based, Art based], finalAnswer=null ); $follows=Follows: How about special effects? -&gt; Bring it on</declarations>
+      <factHandleIds>37,25</factHandleIds>
+    </org.drools.core.audit.event.ActivationLogEvent>
+    <org.drools.core.audit.event.ObjectLogEvent>
+      <type>2</type>
+      <factId>25</factId>
+      <objectToString>Question( question=Would you rather they be..., answers=[Exlposive, Music based, Art based], finalAnswer=Art based )</objectToString>
+    </org.drools.core.audit.event.ObjectLogEvent>
+    <org.drools.core.audit.event.ObjectLogEvent>
+      <type>1</type>
+      <factId>38</factId>
+      <objectToString>Answer( question=Would you rather they be..., answer=Art based )</objectToString>
+    </org.drools.core.audit.event.ObjectLogEvent>
+    <org.drools.core.audit.event.ActivationLogEvent>
+      <type>7</type>
+      <activationId>Would you rather they be... [25, 37]</activationId>
+      <rule>Would you rather they be...</rule>
+      <declarations>$q=Question( question=Would you rather they be..., answers=[Exlposive, Music based, Art based], finalAnswer=Art based ); $follows=Follows: How about special effects? -&gt; Bring it on</declarations>
+      <factHandleIds>37,25</factHandleIds>
+    </org.drools.core.audit.event.ActivationLogEvent>
+    <org.drools.core.audit.event.ActivationLogEvent>
+      <type>4</type>
+      <activationId>Result: kickthepj [38]</activationId>
+      <rule>Result: kickthepj</rule>
+      <declarations></declarations>
+      <factHandleIds>38</factHandleIds>
+    </org.drools.core.audit.event.ActivationLogEvent>
+    <org.drools.core.audit.event.ActivationLogEvent>
+      <type>6</type>
+      <activationId>Result: kickthepj [38]</activationId>
+      <rule>Result: kickthepj</rule>
+      <declarations></declarations>
+      <factHandleIds>38</factHandleIds>
+    </org.drools.core.audit.event.ActivationLogEvent>
+    <org.drools.core.audit.event.ObjectLogEvent>
+      <type>1</type>
+      <factId>39</factId>
+      <objectToString>Result( result=kickthepj )</objectToString>
+    </org.drools.core.audit.event.ObjectLogEvent>
+    <org.drools.core.audit.event.ActivationLogEvent>
+      <type>7</type>
+      <activationId>Result: kickthepj [38]</activationId>
+      <rule>Result: kickthepj</rule>
+      <declarations></declarations>
+      <factHandleIds>38</factHandleIds>
+    </org.drools.core.audit.event.ActivationLogEvent>
+  </events>
+</org.drools.core.audit.WorkingMemoryLog>
+</object-stream>
